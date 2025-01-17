@@ -66,7 +66,7 @@ def main():
     sankey_fig = plot_sankey(steps, input_units=100)
     st.plotly_chart(sankey_fig, use_container_width=True)
 
-    st.markdown("## Übersicht über Fehlerkosten (Approx.)")
+    st.markdown("## Übersicht über Fehlerkosten")
     df = results["df"].copy()
     fail_costs = []
     units_in = results["T_ideal"]
