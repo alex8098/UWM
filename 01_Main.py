@@ -1,4 +1,3 @@
-# 01_Main.py
 import streamlit as st
 from utils import (
     adjust_process,
@@ -10,10 +9,9 @@ from utils import (
 def main():
     st.title("📈 Umwelt & Wertschöpfungsmanagement: Papierflugzeugproduktion")
 
-    steps, runtime, sale_price, material_cost = adjust_process()  # Sidebar
+    steps, runtime, sale_price, material_cost = adjust_process()  #Sidebar
     results = calculate_line_performance(steps, runtime, sale_price, material_cost)
 
-    # Show the top half (table + metrics)
     display_summary(results)
 
     st.markdown("## Kosten- und Gewinnanalyse über die Laufzeit")
