@@ -77,10 +77,6 @@ def move_step(steps, index, direction):
 
 
 def adjust_process():
-    """
-    Ensures the sidebar is shown on every page.
-    Returns (steps, runtime, sale_price, material_cost).
-    """
     #If not in session, load default steps
     if "steps" not in st.session_state:
         st.session_state.steps = deepcopy(DEFAULT_STEPS)
@@ -306,11 +302,6 @@ def calculate_line_performance(steps, runtime, sale_price, material_cost):
 #Display the top summary
 
 def display_summary(results):
-    """
-    Shows the same table + metrics the main page uses,
-    so that ALL pages (Gewinnanalyse, Fehleranalyse) 
-    can have the identical top half.
-    """
     df_display = results["df"].copy()
     df_display = df_display[[
         "Schritt",
