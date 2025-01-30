@@ -36,7 +36,7 @@ def plot_waterfall(results):
         totals={"marker":{"color":"lightskyblue"}}
     ))
     fig.update_layout(
-        title="Waterfall: Umsatz - Kosten = Gewinn",
+        title="Waterfall-Diagramm",
         template='plotly_white'
     )
     return fig
