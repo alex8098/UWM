@@ -251,7 +251,7 @@ def adjust_process():
     st.sidebar.markdown("---")
     st.sidebar.caption(
         "Eine Demo App zur Veranschaulichung von Lean Prinzipen von Lars Mertens, "
-        "Chaerim Kim, Leon Strauch und Alexander Johae"
+        "Chaerim Kim und Alexander Johae"
     )
 
     return st.session_state.steps, runtime, sale_price, material_cost
